@@ -1,0 +1,23 @@
+<html>
+<script>
+var depth = 1000;
+var repetition = 100;
+function populateBase() {
+  var base = document.getElementById('base');
+  var current = base;
+  for (var i = 0; i < depth; ++i) {
+    var div = document.createElement('div');
+    current.appendChild(div);
+    current = div;
+  }
+  for (var i = 0; i < repetition; ++i) {
+    var div = document.createElement('div');
+    div.textContent = i;
+    current.appendChild(div);
+  }
+}
+</script>
+<body onload="populateBase()">
+<div id="base">base</div>
+</body>
+</html>
