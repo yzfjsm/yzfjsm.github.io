@@ -1,5 +1,6 @@
 <html>
-<head>
+<body>
+<div id="base">base</div>
 <script>
 var depth = 1000;
 var repetition = 100;
@@ -17,9 +18,8 @@ function populateBase() {
     current.appendChild(div);
   }
 }
+
+populateBase();
 </script>
-</head>
-<body onload="populateBase()">
-<div id="base">base</div>
 </body>
 </html>
