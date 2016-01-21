@@ -2,8 +2,8 @@
 <body>
 <div id="base">base</div>
 <script>
-var depth = 1000;
-var repetition = 100;
+var depth = 10000;
+var repetition = 1000;
 function populateBase() {
   var base = document.getElementById('base');
   var current = base;
@@ -14,7 +14,7 @@ function populateBase() {
   }
   for (var i = 0; i < repetition; ++i) {
     var div = document.createElement('div');
-    div.textContent = i;
+    div.textContent = 'r' + i;
     current.appendChild(div);
   }
 }
