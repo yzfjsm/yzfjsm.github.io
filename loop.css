@@ -1,0 +1,5 @@
+@import url(imported.css);
+.red {
+color: white;
+background-color: red;
+}
